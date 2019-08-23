@@ -1,3 +1,4 @@
 centos7/.vagrant
-debian9/.vagrant
+debian9/debian_ionic/.vagrant
+debian9/debian_standalone/.vagrant
 raspbian/.vagrant
