@@ -1,25 +1,18 @@
-  - name: Installing base packages
-    apt: name={{ item.name }}
-    with_items:
-      - { name: 'man' }
-      - { name: 'screen' }
-      - { name: 'unzip' }
-      - { name: 'zip'}
-      - { name: 'smem'}
-      - { name: 'htop'}
-      - { name: 'curl'}
-      - { name: 'vim'}
-      - { name: 'bash-completion'}
-      - { name: 'apt-file' }
-      - { name: 'git'}
-      - { name: 'tree' }
-      - { name: 'telnet' }
-      - { name: 'sudo' }
-      - { name: 'build-essential' }
-      - { name: 'bc' }
-      - { name: 'gcc' }
-      - { name: 'lftp' }
-      - { name: 'net-tools' }
+- name: Installing base packages
+  apt: name={{ item.name }}
+  with_items:
+    - { name: 'man' }
+    - { name: 'unzip' }
+    - { name: 'zip'}
+    - { name: 'smem'}
+    - { name: 'vim'}
+    - { name: 'apt-file' }
+    - { name: 'git'}
+    - { name: 'sudo' }
+    - { name: 'build-essential' }
+    - { name: 'bc' }
+    - { name: 'gcc' }
+    - { name: 'curl' }
 
 - name: Creating /root/.ssh directory
   become: true
