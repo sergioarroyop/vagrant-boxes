@@ -13,6 +13,7 @@
     - { name: 'bc' }
     - { name: 'gcc' }
     - { name: 'curl' }
+    - { name: 'screen' }
 
 - name: Creating /root/.ssh directory
   become: true
