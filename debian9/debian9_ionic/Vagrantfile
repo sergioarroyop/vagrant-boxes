@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
   
   config.vm.define "debian_ionic" do |debian_ionic|
 
-    debian.vm.provision "init", type:"ansible"  do |ansible|
+    debian_ionic.vm.provision "init", type:"ansible"  do |ansible|
       ansible.inventory_path = "../../ansible-init/inventory/hosts_vagrant"
       ansible.playbook = "../../ansible-init/playbooks/ionic.yml"
       ansible.limit = "vagrant"
