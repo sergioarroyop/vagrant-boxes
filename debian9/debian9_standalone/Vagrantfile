@@ -1,0 +1,22 @@
+Vagrant.configure(2) do |config|
+  config.vm.box = "debian/stretch64"
+
+  config.vm.network "public_network", bridge: "en0"
+  config.vm.network "private_network", ip: "192.168.222.222"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = false
+    vb.name = "debian"
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
+    vb.customize ["modifyvm", :id, "--usb", "off"]
+  end
+  
+  config.vm.define "debian" do |debian|
+
+    debian.vm.provision "init", type:"ansible"  do |ansible|
+      ansible.inventory_path = "../../ansible-init/inventory/hosts_vagrant"
+      ansible.playbook = "../../ansible-init/playbooks/vagrant.yml"
+      ansible.limit = "vagrant"
+    end
+  end
+end
