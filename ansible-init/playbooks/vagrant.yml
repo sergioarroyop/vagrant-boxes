@@ -1,7 +1,0 @@
-- hosts: all
-  user: vagrant
-  become: yes
-
-  roles:
-    - vagrant
-    - ionic
