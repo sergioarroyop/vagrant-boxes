@@ -1,0 +1,3 @@
+[submodule "ansible-init"]
+	path = ansible-init
+	url = https://github.com/sergioarroyop/ansible-party.git
