@@ -1,5 +1,9 @@
 # vagrant-boxes
 
+Para clonar el repo junto a los submódulos debemos de clonar el repo con el siguiente comando
+
+```git clone -b asaenz --recursive https://github.com/sergioarroyop/vagrant-boxes.git```
+
 # Standalone Box
 
 Desde la carpeta debian9/debian9_standalone podemos ejecutar ```vagrant up``` para arrancar nuestro entorno
