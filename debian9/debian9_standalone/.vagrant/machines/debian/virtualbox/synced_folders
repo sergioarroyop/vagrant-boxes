@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/sergio/Documents/repos/vagrant-boxes/debian9/debian9_standalone","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
