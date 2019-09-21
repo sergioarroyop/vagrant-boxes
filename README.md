@@ -2,7 +2,7 @@
 
 Para clonar el repo junto a los submódulos debemos de clonar el repo con el siguiente comando
 
-```git clone -b asaenz --recursive https://github.com/sergioarroyop/vagrant-boxes.git```
+```git clone -b master --recursive https://github.com/sergioarroyop/vagrant-boxes.git```
 
 # Standalone Box
 
